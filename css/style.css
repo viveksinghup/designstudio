@@ -84,8 +84,8 @@ ul, li {
 	padding: 7px 20px;
 }
 .primary-btn:hover {
-	color: #0098aa;
-	border-color: #0098aa;
+	color: #fa7906;
+	border-color: #fa7906;
 }
 .block-heading {
 	text-align: center;
@@ -104,24 +104,30 @@ ul, li {
 	z-index: 9;
 }
 #Header.header-fixed {
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(3, 3, 3, 0.9);
 	transition: all 0.3s ease-in-out;
 }
 #Header.header-fixed .site-logo-wrap {
-	padding: 15px 0;
+	padding: 0px 0;
 	transition: all 0.3s ease-in-out;
 }
 #Header.header-fixed .site-logo-wrap .logo img {
 	width: 70px;
 	transition: all 0.3s ease-in-out;
+	padding: 5px;
+    height: 70px;
 }
 #Header.header-fixed .main-menu {
-	padding: 27px 0;
+	padding: 18px 0;
 	transition: all 0.3s ease-in-out;
 }
 #Header.header-fixed .main-menu li a {
 	padding: 5px 10px;
+	color: #fff;
 	transition: all 0.3s ease-in-out;
+}
+#Header.header-fixed .main-menu li a::before{
+	bottom: -17px;
 }
 #Header.header-fixed a.menu-trigger {
 	top: 22px;
@@ -130,7 +136,7 @@ ul, li {
 #Header .site-logo-wrap {
 	width: 30%;
 	float: left;
-	padding: 30px 0;
+	padding: 5px 0;
 	transition: all 0.3s ease-in-out;
 }
 #Header .site-logo-wrap .logo {
@@ -141,14 +147,15 @@ ul, li {
 }
 #Header .site-logo-wrap .logo img {
 	display: inline-block;
-	vertical-align: middle;
-	width: 80px;
+    vertical-align: middle;
+    max-width: 80px;
+    height: 90px;
 }
 #Header .main-menu {
 	width: 70%;
 	text-align: right;
 	float: right;
-	padding: 30px 0;
+	padding: 22px 0;
 	transition: all 0.3s ease-in-out;
 }
 #Header .main-menu li {
@@ -159,7 +166,7 @@ ul, li {
 #Header .main-menu li a {
 	position: relative;
 	font-size: 16px;
-	color: #fff;
+	color: #030303;
 	padding: 15px 10px;
 }
 #Header .main-menu li a::before {
@@ -169,7 +176,7 @@ ul, li {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0098aa;
+  background-color: #fa7906;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -279,48 +286,113 @@ ul, li {
 }
 /*Banner style goes here */
 #HeroBanner {
-	display: table;
 	width: 100%;
-	height: 100vh;
-	background: url(../images/banner.jpg)no-repeat 0 0 / cover;
-	background-attachment: fixed;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url('../images/home-bg.jpg');
+    background-position: 70% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #HeroBanner .hero-content {
-	display: table-cell;
-	background-color: rgba(10,40,60,0.7);
-	text-align: center;
-	vertical-align: middle;
-	padding: 0 15px;
+	display: flex;
+    background-color: rgba(10,40,60,0.0);
+    padding: 0 15px;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#HeroBanner .hero-content button{
+	outline: none;
+	cursor: pointer;
+	font-size: 17px;
+    letter-spacing: 1px;
+    color: #fff;
+    border-color: #030303;
+    background-color: #030303;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    height: 60px;
+    width: 200px;
+}
+.down-arrow{
+	width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+  	animation: bouncearrow 2s infinite;
+}
+.down-arrow img{
+	width: 40px;
+}
+.insta{
+	    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    padding: 2px;
+    border-radius: 5px;
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+}
+.insta .insta-inner{
+	    background-color: #fff;
+    padding: 7px 10px;
+        display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.insta span {
+	font-size: 19px;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@keyframes bouncearrow {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 #HeroBanner .hero-content h1 {
-	font-size: 48px;
-	color: #fff;
-	text-transform: uppercase;
+	font-size: 50px;
+	color: #030303;
+	// text-transform: uppercase;
 	margin: 0 0 20px;
 }
 #HeroBanner .hero-content p {
-	font-size: 28px;
-	color: #fff;
+	font-size: 20px;
+	color: #7a7d8c;
+	text-align: center;
 	margin: 0 0 30px;
 }
 #HeroBanner .hero-content .hero-cta {
 	font-size: 22px;
-	color: #fff;
+	color: #030303;
 	text-decoration: none;
-	border: 2px solid #fff;
+	border: 2px solid #030303;
 	border-radius: 0;
 	display: inline-block;
 	padding: 10px 20px;
 	transition: all 0.3s ease-in-out;
 }
 #HeroBanner .hero-content .hero-cta:hover {
-	background-color: #0098aa;
-	border: 2px solid #0098aa;
+	background-color: #fa7906;
+	border: 2px solid #fa7906;
 	transition: all 0.3s ease-in-out;
 }
 /* services section style goes here */
 #Services {
-	padding: 80px 0 50px;
+	padding: 200px 0 150px;
 	background-color: #fafafa;
 }
 #Services .block-heading {
@@ -401,59 +473,25 @@ ul, li {
 	height: 8px;
 	border-radius: 100%;
 }
-// #Services .each-service {
-// 	position: relative;
-// 	text-align: center;
-// 	width: 100%;
-//   	border: 1px solid #e6e6e6;
-//   	background-color: #fff;
-//   	margin: 0 15px 50px;
-//   	padding: 55px 20px 25px;
-// }
-// #Services .each-service .service-icon {
-// 	position: absolute;
-// 	top: -30px;
-// 	left: 50%;
-// 	transform: translateX(-50%);
-// 	padding: 15px;
-// 	background-color: #0098aa;
-// 	border-radius: 50%;
-// 	transition: all 0.2s ease-in-out;
-// }
-// #Services .each-service .service-icon i {
-// 	font-size: 24px;
-// 	color: #fff;
-// 	transition: all 0.2s ease-in-out;
-// }
-// #Services .each-service:hover .service-icon {
-// 	background-color: #ffffff;
-// 	border: 1px solid #0098aa;
-// 	transition: all 0.2s ease-in-out;
-// }
-// #Services .each-service:hover .service-icon i {
-// 	color: #0098aa;
-// 	transition: all 0.2s ease-in-out;
-// }
-// #Services .each-service h5 {
-// 	margin: 0 0 10px;
-// }
-// #Services .each-service p:last-child {
-// 	margin: 0;
-// }
+
 /* porfolio style goes here */
 #Portfolio {
 	background-color: #fafafa;
-	padding: 80px 0;
+	padding: 200px 0;
+}
+#Portfolio .block-heading {
+	margin-bottom: 100px;
 }
 #Portfolio .block-heading p:last-of-type {
 	margin: 0;
 }
 #Portfolio .portfolio-wrapper .each-portfolio {
 	position: relative;
-	width: calc(33.3% - 10px);
+	width: calc(25% - 40px);
 	float: left;
-	margin: 0 5px 10px;
+	margin: 0 20px 40px;
 	text-decoration: none;
+	box-shadow: 0px 20px 59px -15px rgba(0, 0, 0, 0.25);
 	outline: 0 none;
 }
 #Portfolio .each-portfolio img {
@@ -466,7 +504,7 @@ ul, li {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 152, 170, 0.8);
+	background-color: rgba(250, 121, 6, .8);
 	color: #fff;
 	display: block;
 	text-align: center;
@@ -517,7 +555,7 @@ ul, li {
 }
 #About .about-wrapper {
 	width: 50%;
-	padding: 80px 50px 80px 10px;
+	padding: 200px 50px 200px 10px;
 }
 #About .about-wrapper p:last-child {
 	margin: 0;
@@ -664,7 +702,7 @@ ul, li {
 #ContactUs .floating-input:focus ~ label, #ContactUs .floating-input.not-empty ~ label {
 	top: -18px;
   font-size:12px;
-  color:#0098aa;
+  color:#fa7906;
   transition: top 0.2s ease-in-out;
 }
 #ContactUs .submit-btn {
@@ -672,16 +710,18 @@ ul, li {
 }
 #ContactUs .submit-btn button {
 	font-size: 16px;
-	border: 0;
-	border-radius: 0;
-	background-color: #0098aa;
-	color: #fff;
-	padding: 10px 20px;
-	cursor: pointer;
-	outline: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: #fa7906;
+    color: #fff;
+    padding: 20px 20px;
+    cursor: pointer;
+    outline: 0;
+    width: 40%;
 }
 #ContactUs .submit-btn button:hover {
-	background-color: rgba(0,152,170,0.8);
+	box-shadow: 0px 20px 59px -15px rgba(0, 0, 0, 0.25);
+	transition: 0.3s;
 }
 /* footer style goes here */
 #Footer {
@@ -694,7 +734,7 @@ ul, li {
 	color: #fff;
 }
 #Footer .footer-logo-wrap a {
-	color: #0098aa;
+	color: #fa7906;
 	outline: 0;
 }
 #Footer .footer-logo-wrap {

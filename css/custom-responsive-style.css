@@ -32,6 +32,15 @@
   #Services .each-service {
     max-width: 100%;
     margin: 0 0 50px;
+    flex-direction: column;
+  }
+  #Services .service-title {
+    max-width: 100%;
+    right: 0;
+    font-size: 30px;
+  }
+  #Services .service-description {
+    width: 100%;
   }
   #Services {
     padding: 50px 0;

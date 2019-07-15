@@ -328,29 +328,6 @@ ul, li {
 .down-arrow img{
 	width: 40px;
 }
-.insta{
-	    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    padding: 2px;
-    border-radius: 5px;
-    position: absolute;
-    right: 40px;
-    bottom: 20px;
-}
-.insta .insta-inner{
-	    background-color: #fff;
-    padding: 7px 10px;
-        display: flex;
-    align-items: center;
-    border-radius: 5px;
-}
-.insta span {
-	font-size: 19px;
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    margin-left: 10px;
-}
 
 @keyframes bouncearrow {
   0%, 20%, 50%, 80%, 100% {

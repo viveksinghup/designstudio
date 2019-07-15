@@ -583,7 +583,7 @@ ul, li {
 	display: table-cell;
 	background-color: rgba(10,40,60,0.7);
 	color: #fff;
-	padding: 50px 0;
+	padding: 150px 0;
 }
 #Testimonial .testimonial-slider {
 	text-align: center;
@@ -605,7 +605,7 @@ ul, li {
 	padding: 70px 0;
 }
 #ContactUs .contact-title {
-	font-size: 30px;
+	font-size: 44px;
 	color: #000;
 	text-align: center;
 	margin: 0 0 30px;
@@ -653,6 +653,7 @@ ul, li {
 #ContactUs .c-detail .c-info {
 	width: 90%;
 	display: inline-block;
+	color: #030303;
 	vertical-align: top;
 }
 #ContactUs .c-detail span .fa {

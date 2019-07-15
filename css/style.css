@@ -135,15 +135,30 @@ ul, li {
 }
 #Header .site-logo-wrap {
 	width: 30%;
-	float: left;
-	padding: 5px 0;
-	transition: all 0.3s ease-in-out;
+    float: left;
+    transition: all 0.3s ease-in-out;
+    position: relative;
 }
 #Header .site-logo-wrap .logo {
 	color: #fff;
-	font-size: 24px;
-	font-style: italic;
-	display: inline-block;
+    font-size: 24px;
+    font-style: italic;
+    position: absolute;
+    display: block;
+    width: 67px;
+    height: 90px;
+}
+#Header .site-logo-wrap .logo img{
+	position: absolute;
+}
+#Header .site-logo-wrap .logo .white {
+	opacity: 0;
+}
+#Header.header-fixed .site-logo-wrap .logo .black {
+	opacity: 0;
+}
+#Header.header-fixed .site-logo-wrap .logo .white {
+	opacity: 1;
 }
 #Header .site-logo-wrap .logo img {
 	display: inline-block;
@@ -322,7 +337,7 @@ ul, li {
     height: 50px;
     cursor: pointer;
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
   	animation: bouncearrow 2s infinite;
 }
 .down-arrow img{
@@ -572,7 +587,7 @@ ul, li {
 }
 /* Contact us section style goes here */
 #ContactUs {
-	padding: 70px 0;
+	padding: 100px 0;
 }
 #ContactUs .contact-title {
 	font-size: 44px;

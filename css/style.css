@@ -738,6 +738,13 @@ ul, li {
 	padding: 50px 0;
 	margin: 0px 32px;
 }
+.footer-bc-social__item{
+	padding: 4px 10px;
+}
+.footer-bc-social__item a{
+	font-size: 20px;
+	color: #25272b;
+}
 @media (max-width: 575px) {
 	.footer_bc__site-links, .footer_bc__disclaimer-text{
 		flex-direction: column;

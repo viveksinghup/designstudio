@@ -213,6 +213,7 @@ ul, li {
 	-webkit-transition: left .5s;
 	-moz-transition: left .5s;
 	transition: left .5s;
+	z-index: 1;
 }
 #Header .mobile-menu ul {
 	margin-top: 85px;
@@ -243,7 +244,7 @@ ul, li {
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: white;
+  background-color: #030303;
   display: block;
   position: absolute;
   width: 30px;
@@ -282,14 +283,14 @@ ul, li {
   -ms-transform: translateY(4px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(4px) translateX(1px) rotate(45deg);
   transform: translateY(4px) translateX(1px) rotate(45deg);
-  background-color: white;
+  background-color: #030303;
 }
 #Header a.menu-trigger.active span:after {
   -moz-transform: translateY(-8px) translateX(1px) rotate(-45deg);
   -ms-transform: translateY(-8px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-8px) translateX(1px) rotate(-45deg);
   transform: translateY(-8px) translateX(1px) rotate(-45deg);
-  background-color: white;
+  background-color: #030303;
 }
 /*Banner style goes here */
 #HeroBanner {
@@ -740,6 +741,12 @@ ul, li {
 @media (max-width: 575px) {
 	.footer_bc__site-links, .footer_bc__disclaimer-text{
 		flex-direction: column;
+	}
+	#Header, .main-navigation{
+		height: 85px;
+	}
+	#Header.header-fixed{
+		padding-top: 5px;
 	}
 }
 .footer_bc__site-links-column{

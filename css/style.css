@@ -183,7 +183,7 @@ ul, li {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fa7906;
+  background-color: #25272a;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -485,7 +485,9 @@ ul, li {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(250, 121, 6, .8);
+	background: -webkit-gradient(linear,left top, right top,from(rgba(36, 65, 231, 0.8)),to(rgba(255, 16, 83, 0.8)));
+    background: -o-linear-gradient(left,rgba(36, 65, 231, 0.8) 0%,rgba(255, 16, 83, 0.8) 100%);
+    background: linear-gradient(to right,rgba(36, 65, 231, 0.8) 0%,rgba(255, 16, 83, 0.8) 100%);
 	color: #fff;
 	display: block;
 	text-align: center;
@@ -696,8 +698,8 @@ ul, li {
 #ContactUs .submit-btn button {
 	font-size: 16px;
     border: 0;
-    border-radius: 0;
-    background-color: #fa7906;
+    border-radius: 4px;
+    background-color: #25272b;
     color: #fff;
     padding: 20px 20px;
     cursor: pointer;
@@ -795,7 +797,7 @@ ul, li {
 }
 .footer_bc__disclaimer-text p{
 	color: #3c4043 !important;
-    font-size: 12px !important;
+    font-size: 13px !important;
     margin-bottom: 0px !important;
 }
 
